@@ -1,5 +1,5 @@
 @Library('CRE')
-import java.lang.Object
+import my.Bar
 
 pipeline {
     agent any
@@ -14,9 +14,9 @@ pipeline {
                 git url: 'https://github.com/panov-andy/t360.git'
                 echo 'START'
                 script {
+                    Bar bar = new Bar()
                     bar.foo()
                 }
-
             }
         }
     }
