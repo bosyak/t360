@@ -1,6 +1,9 @@
 @Library('CRE')
 import my.Bar
 
+sayHello 'Joe'
+sayHello() /* invoke with default arguments */
+
 pipeline {
     agent any
     stages {
