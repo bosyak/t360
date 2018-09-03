@@ -1,5 +1,5 @@
 @Library('CRE')
-import my.mainUtil
+import my.Bar
 
 pipeline {
   agent any
@@ -13,7 +13,7 @@ pipeline {
       steps {
         git url: 'https://github.com/panov-andy/t360.git'
         echo 'START'
-        mainUtil.testIt
+        bar.foo()
       }
     }
   }
