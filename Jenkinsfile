@@ -8,7 +8,7 @@ pipeline {
     }
     stage('clone') {
       steps {
-        git(branch: '*/master', url: 'https://github.com/panov-andy/t360.git')
+        git url: 'https://github.com/panov-andy/t360.git'
         echo 'START'
       }
     }
