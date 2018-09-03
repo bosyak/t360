@@ -16,8 +16,9 @@ pipeline {
                 script {
                     Bar bar = new Bar()
                     bar.foo()
+                    log.info('hello from VARS!!')
                 }
-                log.info('hello from VARS!!')
+
             }
         }
     }
